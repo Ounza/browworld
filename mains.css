@@ -1,0 +1,286 @@
+/*html {
+  background-image: linear-gradient(-147deg, #ffe53b, #ff2525); #c39885
+}*/
+body {
+  background-color: #ffffcc;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 1.125rem;
+  margin: 0;
+}
+/*Top nav bar styling*/
+/* Add an active class to highlight the current page */
+.active {
+  background-color: rgba(185, 106, 3, 0.517);
+  color: white;
+}
+
+.topnavbar {
+  background-color: black;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.topnavbar ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.topnavbar a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 19px 20px;
+}
+
+/* Navigation Links */
+.nav-items {
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  transition: 0.3s ease;
+}
+
+.nav-items a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* Hide Checkbox */
+input#menu-icon-input {
+  display: none;
+}
+
+/* Hide Menu Icon in large screen display (above 800px wide screen */
+.topnavbar label {
+  padding: 10px 20px;
+  float: right;
+  font-size: 2rem;
+  color: #f2f2f2;
+  display: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.topnavbar label:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px) {
+  /* To display one link in a row */
+  .topnavbar ul {
+    display: block;
+  }
+
+  /* Display the menu icon */
+  .topnavbar label {
+    display: inline-flex;
+  }
+
+  /* Looks good while hovering */
+  .topnavbar a {
+    display: block;
+  }
+
+  /* Hide the links until the menu icon is clicked */
+  .nav-items {
+    max-height: 0;
+  }
+
+  /* Display links */
+  input:checked ~ .nav-items {
+    max-height: 100%;
+  }
+}
+/*Rest of body*/
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#brow {
+  font-size: 100px;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 3.25rem;
+  font-family: "Playfair Display", serif;
+}
+.about-us {
+  min-height: 300px;
+  padding: 20px;
+  margin: 0;
+}
+.mycarousel {
+  margin-bottom: 40px;
+}
+h4 {
+  color: white;
+  font-family: "Courgette", cursive;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: thin solid black;
+  z-index: 1000;
+}
+.navigation-main {
+  text-align: right;
+  flex: 2;
+}
+.flex {
+  display: flex;
+  margin-bottom: 40px;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: black;
+  border: solid thin black;
+  color: white;
+}
+.navigation {
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+.navbutton a:hover {
+  background-color: rgba(0, 0, 0, 0.37);
+  transition-duration: 0.2s;
+  opacity: 1;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.navbutton {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+.navbutton a {
+  padding: 5px;
+  text-decoration: none;
+}
+.logo {
+  text-align: left;
+  flex: 1;
+}
+main {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+.main2 {
+  min-height: 300px;
+  padding: 50px;
+}
+li {
+  line-height: 1.75rem;
+}
+.description {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.herobox1 {
+  flex: 2;
+  padding-right: 100px;
+}
+.herobox2 {
+  flex: 1;
+}
+h1 {
+  font-size: 3.25rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  text-shadow: 0px 5px 5px black;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+.cards h2 {
+  padding-top: 150px;
+  font-weight: 1000;
+}
+i {
+  font-size: 100px;
+  color: white;
+}
+.cards a {
+  color: black;
+  text-decoration: none;
+}
+#booking {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  font-family: "Playfair Display", serif;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px black;
+}
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+.tbox {
+  background-color: black;
+  border: solid thin black;
+  color: white;
+  width: 47%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.inputwrapper {
+  margin-bottom: 30px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+}
+.newline {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+.margin-right-a {
+  margin-right: 20px;
+}
